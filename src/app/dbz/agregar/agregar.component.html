@@ -1,0 +1,9 @@
+<h3>Agregar</h3>
+<hr>
+<!-- con ngSubmit evitamos que se recargue toda la página al hacer submit,
+    se necesit importar el módulo FormsModule -->
+<form (ngSubmit)="agregar()">
+    <input placeholder="Nombre" type="text" [(ngModel)]="nuevo.nombre" name="nombre">
+    <input placeholder="Poder" type="number" [(ngModel)]="nuevo.poder" name="poder">
+    <button type="submit">Agregar</button>
+</form>
